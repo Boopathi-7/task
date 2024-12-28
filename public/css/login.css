@@ -1,0 +1,123 @@
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1); /* Translucent white */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #6a11cb; /* Gradient start color */
+    background-image: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient effect */
+    color: #fff;
+    padding: 12px 20px; /* Slightly larger padding for a better feel */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.submit-btn:hover {
+    background-color: #1a5fc9; /* Hover color */
+    background-image: linear-gradient(45deg, #1a5fc9, #4e73df); /* Hover gradient effect */
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+}
+
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+/* Alert Box Styling - Positioned at the top center */
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000; /* Ensure the alert box is on top of other elements */
+}
+
+.alert-box.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.alert-box.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.alert-box p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-group input {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
